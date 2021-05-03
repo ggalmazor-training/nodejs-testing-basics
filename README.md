@@ -1,6 +1,26 @@
 # Basic testing challenges in NodeJS
 
-Your goal is to write tests for all the files in the `src` folder without changing them in any way.
+Your goal is to write tests for all the files in the `src` folder.
+
+The suggested sequence you could follow is:
+- [src/simple-pure-function.js](src/simple-pure-function.js)
+- [src/write-to-stdout.js](src/write-to-stdout.js)
+- [src/write-to-disk.js](src/write-to-disk.js)
+- [src/read-time.js](src/read-time.js)
+- [src/http-call.js](src/http-call.js)
+- [src/read-from-db.js](src/read-from-db.js)
+- [src/read-from-db-di.js](src/read-from-db-di.js)
+
+These scripts showcase a range of common testing challenges such as:
+- Closed design that gets in the way
+- Coupling to third party systems
+- Dependency on the system they're running
+
+Some extra guidelines:
+- There's no single perfect way to test any of these: you're encouraged to try different approaches.
+- Also, try to reject the impulse of changing the implementation files at first. Once you test all of them, try alternative designs that would make them easier to test.
+- Some of these challenges will probably benefit from adding new npm modules to the project to ensure test isolation and determinism. 
+
 
 ## Preparing your environment
 
